@@ -37,7 +37,7 @@ client.on('messageCreate', async (message) => {
             await message.channel.send(textToSpam).catch(() => {
                 spamState.set(channelId, false);
             });
-            await new Promise(resolve => setTimeout(resolve, 400));
+            await new Promise(resolve => setTimeout(resolve, 200));
         }
     }
 
